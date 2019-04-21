@@ -1,2 +1,0 @@
-# PythonSamples
-Learning Python
