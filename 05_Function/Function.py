@@ -42,3 +42,23 @@ def execute_print():
 
 
 execute_callback(execute_print)
+
+
+# 递归函数
+def summation(n):
+    if n <= 0:
+        return 0
+    total = n + summation(n-1)
+    print(total)
+    return total
+
+
+summation(10)
+
+
+# 匿名函数
+# 下面是一份关于匿名函数 lambda的说明指南，请不要过度和滥用lambda函数
+# * https://treyhunner.com/2018/09/stop-writing-lambda-expressions/
+print((lambda x: x + x)(4))
+
+(lambda x: summation(x))(2)
